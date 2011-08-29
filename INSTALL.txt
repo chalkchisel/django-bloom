@@ -1,0 +1,8 @@
+To install django-bloom, run the following command inside this directory:
+
+	python setup.py install
+
+Or place the ``bloom`` directory somewhere on the Python path, or symlink it to
+the Python path.
+
+This application requires Python 2.5 or later and a recent Subversion checkout of Django.
