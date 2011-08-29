@@ -40,5 +40,5 @@ except Exception:
 	raise Exception("Couldn\'t find Device Atlas JSON Library. Check BLOOM_DEVICE_ATLAS_PATH")
 
 def get_device(request):
-	ua = request.META['HTTP_USER_AGENT']
+	ua = request.META.get('HTTP_USER_AGENT', '')
 	return device_atlas.getPropertiesAsTyped(device_atlas_tree, ua)			
